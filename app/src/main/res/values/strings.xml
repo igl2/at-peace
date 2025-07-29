@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">At Peace</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="logout">Logout</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="journal_entry_title">Journal Entry Title</string>
+    <string name="what_is_on_your_mind_today">What\'s on your mind today?</string>
+    <string name="post">Post</string>
+    <string name="no_journal_entries_yet">No journal entries yet.</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "794358628383",
+    "project_id": "login-register-firebase-8050f",
+    "storage_bucket": "login-register-firebase-8050f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794358628383:android:114f2f79058b78a4a1d52a",
+        "android_client_info": {
+          "package_name": "com.example.atpeace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTdxiWf8lVs07a-D2q37YPpZV_UHVczrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

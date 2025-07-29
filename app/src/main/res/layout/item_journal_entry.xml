@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_marginBottom="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    tools:context=".EntryListViewerActivity">
+
+    <TextView
+        android:id="@+id/journalEntryTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Journal Title" />
+
+    <TextView
+        android:id="@+id/journalEntryViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"
+        android:textSize="15sp"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/journalEntryPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="Preview" />
+
+</LinearLayout>

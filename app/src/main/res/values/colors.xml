@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="at_peace_primary">#039BE5</color>
+    <color name="at_peace_on_primary">#FFFFFF</color>
+    <color name="at_peace_primary_container">#E0F2FF</color>
+    <color name="at_peace_on_primary_container">#001D36</color>
+</resources>
