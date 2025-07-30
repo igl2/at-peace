@@ -66,17 +66,20 @@ class RegistrationActivity : AppCompatActivity() {
             val password = editTextPassword.text.toString()
 
             if (TextUtils.isEmpty(email)) {
-                Toast.makeText(this@RegistrationActivity, "Please enter an email address", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(this@RegistrationActivity, "Please enter an email address", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
+                return@setOnClickListener
+            }
+
+            if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                Toast.makeText(this@RegistrationActivity, "Please enter a valid email address", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
 
             if (TextUtils.isEmpty(password)) {
-                Toast.makeText(
-                    this@RegistrationActivity,
-                    "Please enter a password",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(this@RegistrationActivity, "Please enter a password", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
 
@@ -88,7 +91,7 @@ class RegistrationActivity : AppCompatActivity() {
                         // Logs the username (insecure implementation for educational purposes)
                         Log.d("Login", "Username: ${auth.currentUser?.email}")
                         // Logs the password (insecure implementation for educational purposes)
-                        Log.d("Login", "Password: $password")
+                        Log.d("Auth", "User authentication successful")
                         val intent = Intent(this@RegistrationActivity, LoginActivity::class.java)
                         startActivity(intent)
                         finish()

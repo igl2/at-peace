@@ -99,11 +99,11 @@ class JournalEntryActivity : AppCompatActivity() {
                 .addOnSuccessListener {
                     Toast.makeText(this@JournalEntryActivity, "Journal Entry Saved", Toast.LENGTH_SHORT).show()
                     // Logs the user and entry IDs (insecure implementation for educational purposes)
-                    Log.d("Firebase", "Entry Saved successfully under user $currentUserId, entry $entryID")
+                    Log.d("Firebase", "Entry Saved successfully!")
                     // Logs the title (insecure implementation for educational purposes)
                     Log.d("Firebase", "Title: $journalEntryTitle")
                     // Logs the content (insecure implementation for educational purposes)
-                    Log.d("Firebase", "Content: $journalEntryContent")
+                    Log.d("Firebase", "Journal entry saved successfully")
                     // Logs the timestamp (insecure implementation for educational purposes)
                     Log.d("Firebase", "Timestamp: $currentTimestamp")
                     val intent = Intent(this@JournalEntryActivity, EntryListViewerActivity::class.java)
